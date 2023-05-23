@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mapa del Sitio | Rentacar.com.ar</title>
+
+    <!-- Favicon -->
+   
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <!-- CSS Global -->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/plugins/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="assets/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/plugins/prettyphoto/css/prettyPhoto.css" rel="stylesheet">
+    <link href="assets/plugins/owl-carousel2/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/plugins/owl-carousel2/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/plugins/animate/animate.min.css" rel="stylesheet">
+    <link href="assets/plugins/swiper/css/swiper.min.css" rel="stylesheet">
+    <link href="assets/plugins/datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Head Libs -->
+    <script src="assets/plugins/modernizr.custom.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="assets/plugins/iesupport/html5shiv.js"></script>
+    <script src="assets/plugins/iesupport/respond.min.js"></script>
+    <![endif]-->
+	
+	
+	<style>
+	
+	.car-big-card .car-details ul li:before {
+    /* content: '\f058'; */
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    color: #64206a;
+	display:none;
+}
+	
+	.custom-file {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: calc(3.25rem + 2px);
+    margin-bottom: 0;
+}
+	.custom-file-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    height: calc(3.25rem + 2px);
+    padding: .475rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+.custom-file-label::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    display: block;
+    height: 3.25rem;
+    padding: .475rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #e9ecef;
+    border-left: 1px solid #ced4da;
+    border-radius: 0 .25rem .25rem 0;
+}
+
+.custom-file-label::after {
+    content: "Subir";
+}
+	
+	input[type="file"] {
+    display: block;
+}
+.custom-file-input {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    margin: 0;
+    opacity: 0;
+}
+
+
+
+
+	</style>
+</head>
+<body id="home" class="wide">
+<!-- PRELOADER -->
+<div id="preloader">
+    <div id="preloader-status">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+       
+    </div>
+</div>
+<!-- /PRELOADER -->
+
+<!-- WRAPPER -->
+<div class="wrapper">
+
+
+
+
+
+
+<div id="content-desktop" class="sticky-container2 ">
+    <ul class="sticky2" style="margin: 40px !important;">
+	
+	
+       <li>
+            <img src="assets/img/fb.png" width="32" height="32">
+            <p><a href="#" target="_blank">Seguinos en<br>Facebook</a></p>
+        </li>
+        <li>
+            <img src="assets/img/tw.png" width="32" height="32">
+            <p><a href="#" target="_blank">Seguinos en<br>Twitter</a></p>
+        </li>
+      <li>
+            <img src="assets/img/ig.png" width="32" height="32">
+            <p><a href="#" target="_blank">Seguinos en<br>Instagram</a></p>
+        </li>
+       
+        <li>
+            <img src="assets/img/wa.png" width="32" height="32">
+            <p><a href="#" target="_blank">Contactanos por<br>Whatsapp</a></p>
+        </li>
+    </ul>
+</div>
+
+<div id="content-mobile" class="sticky-container3 ">
+    <ul class="sticky3" style="margin: 40px !important;">
+	
+	
+       <li>
+            <img src="assets/img/fb.png" width="32" height="32">
+            <p><a href="#" target="_blank">Seguinos en<br>Facebook</a></p>
+        </li>
+        <li>
+            <img src="assets/img/tw.png" width="32" height="32">
+            <p><a href="#" target="_blank">Seguinos en<br>Twitter</a></p>
+        </li>
+      <li>
+            <img src="assets/img/ig.png" width="32" height="32">
+            <p><a href="#" target="_blank">Seguinos en<br>Instagram</a></p>
+        </li>
+       
+        <li>
+            <img src="assets/img/wa.png" width="32" height="32">
+            <p><a href="#" target="_blank">Contactanos por<br>Whatsapp</a></p>
+        </li>
+    </ul>
+</div>
+
+    <!-- HEADER -->
+      <header class="header fixed">
+        <div class="header-wrapper">
+            <div class="container">
+
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html"><img src="assets/img/logo-rentacar.png" alt="Logo Rentacar"/></a>
+                </div>
+                <!-- /Logo -->
+
+                <!-- Mobile menu toggle button -->
+                <a href="#" class="menu-toggle btn ripple-effect btn-theme-transparent"><i class="fa fa-bars"></i></a>
+                <!-- /Mobile menu toggle button -->
+
+                <!-- Navigation -->
+                <nav class="navigation closed clearfix">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <!-- navigation menu -->
+                            <a href="#" class="menu-toggle-close btn"><i class="fa fa-times"></i></a>
+                            <ul class="nav sf-menu">
+                               
+                                <li><a href="#">Mis Reservas</a></li>
+                                <li><a href="#">Favoritos</a></li>
+                                
+                                <li><a href="#">Ofertas</a></li>
+                                <li><a href="#">Contacto</a></li>
+                               
+                                <li ><a href="index.html" >$ (ARS)</a>
+                                    <ul>
+                                        <li><a href="#" >US$ (DOL)</a></li>
+										  <li><a href="#">€ (EUR)</a></li>
+                                        <li><a href="#">R$ (BRL)</a></li>
+										 <li><a href="#">$ (UYU)</a></li>
+                                     
+                                        
+                                    </ul>
+                                </li>
+								 <li class="active"><a href="index.html" ><img src="assets/img/esp.png" alt="Español"/></a>
+                                    <ul>
+                                        <li><a href="#" ><img src="assets/img/ing.png" alt="Ingles"/></a></li>
+                                        <li><a href="#"><img src="assets/img/bra.png" alt="Portugues"/></a></li>
+                                        <li><a href="#"><img src="assets/img/fra.png" alt="Frances"/></a></li>
+                                        
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- /navigation menu -->
+                        </div>
+                    </div>
+                    <!-- Add Scroll Bar -->
+                    <div class="swiper-scrollbar"></div>
+                </nav>
+                <!-- /Navigation -->
+
+            </div>
+        </div>
+
+    </header>
+    <!-- /HEADER -->
+
+    <!-- CONTENT AREA -->
+    <div class="content-area">
+<!-- BREADCRUMBS -->
+        <section class="page-section breadcrumbs text-right">
+            <div class="container">
+                <div class="page-header">
+                    <h3>Mapa del Sitio</h3>
+                </div>
+                <ul class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                   
+                </ul>
+            </div>
+        </section>
+        <!-- /BREADCRUMBS -->
+        <section class="page-section image subscribe">
+            <div class="container">
+                <div class="row">
+                    <!-- CONTENT -->
+                   
+                       <div class="col-md-12">
+	
+	<div class="main-content row">
+	
+	
+	    <div class="row"> <!-- DIV ROW 1 -->
+                      						<div class="col-md-12">
+											
+										 <div class="post-body" style="margin-top: 30px; color: #ffffff;">
+										
+											
+											
+											<ul style=" color: #FDDC00;">
+    
+    <li><a href="#">
+        <h4 style=" color: #FDDC00;"><i class="fa fa-home"></i>
+        Home </h4>
+    </a></li>
+    
+	<li><a href="#">
+        <h4 style=" color: #FDDC00;"><i class="fa fa-flag"></i>
+        Sucursales </h4>
+    </a></li>
+<li><a href="#">
+        <h4 style=" color: #FDDC00;"><i class="fa fa-sitemap"></i>
+        Mapa del Sitio </h4>
+    </a></li>
+
+ <li><a href="#">
+        <h4 style=" color: #FDDC00;"><i class="fa fa-envelope"></i>
+        Contacto </h4>
+    </a></li>
+	<li><a href="#">
+        <h4 style=" color: #FDDC00;"><i class="fa fa-location-arrow"></i>
+         Ciudades </h4>
+    </a>
+		<ul>
+		<div class="col-md-3">
+		<li ><a href="https://www.rentacar.com.ar/alquiler-de-autos-en-Mendoza.php" style=" color: #ffffff;"><i class="fa fa-search-plus"></i> Alquiler de autos en Mendoza</a></li>
+		<li ><a href="https://www.rentacar.com.ar/alquiler-de-autos-en-Tigre.php" style=" color: #ffffff;"><i class="fa fa-search-plus"></i> Alquiler de autos en Tigre</a></li>
+		<li><a href="https://www.rentacar.com.ar/alquiler-de-autos-en-El-Calafate.php" style=" color: #ffffff;"><i class="fa fa-search-plus"></i> Alquiler de autos en El Calafate</a></li>
+		<li><a href="https://www.rentacar.com.ar/alquiler-de-autos-en-San-Rafael.php" style=" color: #ffffff;"><i class="fa fa-search-plus"></i> Alquiler de autos en San Rafael</a></li>
+		<li><a href="https://www.rentacar.com.ar/alquiler-de-autos-en-Cordoba.php" style=" color: #ffffff;"><i class="fa fa-search-plus"></i> Alquiler de autos en Cordoba</a></li>
+		</div>
+		<div class="col-md-3">
+		<li><a href="https://www.rentacar.com.ar/alquiler-de-autos-en-Tucuman.php" style=" color: #ffffff;"><i class="fa fa-search-plus"></i> Alquiler de autos en Tucuman</a></li>
+		<li><a href="https://www.rentacar.com.ar/alquiler-de-autos-en-Nordelta.php" style=" color: #ffffff;"><i class="fa fa-search-plus"></i> Alquiler de autos en Nordelta</a></li>
+		<li><a href="https://www.rentacar.com.ar/alquiler-de-autos-en-Puerto-Madryn.php" style=" color: #ffffff;"><i class="fa fa-search-plus"></i> Alquiler de autos en Puerto Madryn</a></li>
+		<li><a href="https://www.rentacar.com.ar/alquiler-de-autos-en-Jujuy.php" style=" color: #ffffff;"><i class="fa fa-search-plus"></i> Alquiler de autos en Jujuy</a></li>
+		<li><a href="https://www.rentacar.com.ar/alquiler-de-autos-en-San-Isidro.php" style=" color: #ffffff;"><i class="fa fa-search-plus"></i> Alquiler de autos en San Isidro</a></li>
+		</div>
+		<div class="col-md-3">
+		<li><a href="https://www.rentacar.com.ar/alquiler-de-autos-en-Salta.php" style=" color: #ffffff;"><i class="fa fa-search-plus"></i> Alquiler de autos en Salta</a></li>
+		<li><a href="https://www.rentacar.com.ar/alquiler-de-autos-en-Mar-del-Plata.php" style=" color: #ffffff;"><i class="fa fa-search-plus"></i> Alquiler de autos en Mar del Plata</a></li>
+		<li><a href="https://www.rentacar.com.ar/alquiler-de-autos-en-Las-Le�as.php" style=" color: #ffffff;"><i class="fa fa-search-plus"></i> Alquiler de autos en Las Leñas</a></li>
+		<li><a href="https://www.rentacar.com.ar/alquiler-de-autos-en-Buenos-Aires.php" style=" color: #ffffff;"><i class="fa fa-search-plus"></i> Alquiler de autos en Buenos Aires</a></li>
+		<li><a href="https://www.rentacar.com.ar/alquiler-de-autos-en-San-Fernando.php" style=" color: #ffffff;"><i class="fa fa-search-plus"></i> Alquiler de autos en San Fernando</a></li>
+		</div>
+		
+		<div class="col-md-3">
+		
+		
+		<li><a href="https://www.rentacar.com.ar/alquiler-de-autos-en-Bariloche.php" style=" color: #ffffff;"><i class="fa fa-search-plus"></i> Alquiler de autos en Bariloche</a></li>
+		<li><a href="https://www.rentacar.com.ar/alquiler-de-autos-en-Ezeiza.php" style=" color: #ffffff;"><i class="fa fa-search-plus"></i> Alquiler de autos en Ezeiza</a></li>
+		<li><a href="https://www.rentacar.com.ar/alquiler-de-autos-en-Neuquen.php" style=" color: #ffffff;"><i class="fa fa-search-plus"></i> Alquiler de autos en Neuquen</a></li>
+		<li><a href="https://www.rentacar.com.ar/alquiler-de-autos-en-Iguazu.php" style=" color: #ffffff;"><i class="fa fa-search-plus"></i> Alquiler de autos en Iguazu</a></li>
+		<li><a href="https://www.rentacar.com.ar/rent-a-car-in-Buenos-Aires.php" style=" color: #ffffff;"><i class="fa fa-search-plus"></i> Rent a car in Buenos Aires</a></li>
+		</div>
+		</ul>
+    </li><!-- cierra lista de ciudades-->
+    
+  
+    </ul>
+											
+											</div>
+											</div>
+	
+	
+	
+	
+                         </div>
+			
+	
+
+		
+	
+	
+    
+	
+	
+	
+		
+	</div>
+	</div>
+
+                      
+
+                    </div>
+                    <!-- /CONTENT -->
+
+                   
+
+                </div>
+           
+        </section>
+        <!-- /PAGE WITH SIDEBAR -->
+
+        
+
+    </div>
+    <!-- /CONTENT AREA -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <div class="widget">
+                            <h4 class="widget-title">EMPRESA</h4>
+							
+                             
+							  <a href="#" ><img class="img-responsive" src="assets/img/data-fiscal.png" alt="Data Fical" style="margin-bottom: 10px;"/></a>
+                         
+                          <img class="img-responsive" src="assets/img/logo_marca_pais.png" alt="Argentina" style="margin-bottom: 10px;"/>
+						  
+						   <a href="index.html"><img class="img-responsive" src="assets/img/logo-rentacar-footer.png" alt="Logo Rentacar"/></a>
+                           
+                        </p>
+                        </div>
+                    </div>
+                     <div class="col-md-3">
+                        <div class="widget widget-categories2">
+                            <h4 class="widget-title">Información</h4>
+                            <ul>
+                                <li><a href="#">Sucursales</a></li>
+                                <li><a href="#">Contacto</a></li>
+                                <li><a href="#">Términos y Condiciones</a></li>
+                                <li><a href="#">Mapa de Sitio</a></li>
+                                <li><a href="#">Franquicia</a></li>
+								  <li><a href="#">Info. Covid 19</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="widget widget-tag-cloud">
+                            <h4 class="widget-title">Formas de Pago</h4>
+                            <ul>
+							 <li><img class="img-responsive" src="assets/img/ssl-2-1.png" alt="Sitio Seguro"/></li>
+                               
+							
+                               
+                            </ul>
+                        </div>
+						<div class="widget widget-tag-cloud">
+                          
+                            <ul>
+							 
+                                <li><img class="img-responsive" src="assets/img/mercado-pago-logo.png" alt="Mercado Pago"/></li>
+                                <li> <img src="assets/img/preview/payments/mastercard-2.jpg" alt="Mastercard"/></li>
+                                <li><img src="assets/img/preview/payments/visa-2.jpg" alt="Visa"/></li>
+                                <li> <img src="assets/img/preview/payments/american-express-2.jpg" alt="American Express"/></li>
+                                <li><img src="assets/img/preview/payments/paypal-2.jpg" alt="Paypal"/></li>
+							
+                               
+                            </ul>
+                        </div>
+                    </div>
+					<div class="col-md-3">
+                        <div class="widget">
+                            <h4 class="widget-title">CONTACTO</h4>
+                          
+                           
+                            <ul>
+							  <li>
+                                   <a href="tel:08107778080" style="padding-top: 5px; "><i class="fa fa-phone"></i> 0810 777 8080</a></li>
+								   <li><i class="fa fa-calendar"></i> Lun a Vie de 9hs a 19hs </li>
+								     <li><i class="fa fa-calendar"></i> Sab de 10hs a 18hs </li></br>
+                             	 <li><img src="assets/img/mps.png" alt="Powered By MPS"/></li>
+                            </ul>
+                        <!-- </div> -->
+                    <!-- </div> -->
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-meta">
+            <div class="container">
+                <div class="row" >
+
+                    <div class="col-sm-12" >
+                       
+                        <div class="copyright">&copy; 2015 Todos los derechos reservados. Los logotipos y lemas que identifican a cualquier producto y servicio de Rentacar.com.ar son marcas de su propiedad.</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /FOOTER -->
+
+    <div id="to-top" class="to-top"><i class="fa fa-angle-up"></i></div>
+
+</div>
+<!-- /WRAPPER -->
+
+<!-- JS Global -->
+<script src="assets/plugins/jquery/jquery-1.11.1.min.js"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script src="assets/plugins/superfish/js/superfish.min.js"></script>
+<script src="assets/plugins/prettyphoto/js/jquery.prettyPhoto.js"></script>
+<script src="assets/plugins/owl-carousel2/owl.carousel.min.js"></script>
+<script src="assets/plugins/jquery.sticky.min.js"></script>
+<script src="assets/plugins/jquery.easing.min.js"></script>
+<script src="assets/plugins/jquery.smoothscroll.min.js"></script>
+<!--<script src="assets/plugins/smooth-scrollbar.min.js"></script>-->
+<script src="assets/plugins/swiper/js/swiper.jquery.min.js"></script>
+<script src="assets/plugins/datetimepicker/js/moment-with-locales.min.js"></script>
+<script src="assets/plugins/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+<!-- JS Page Level -->
+<script src="assets/js/theme-ajax-mail.js"></script>
+<script src="assets/js/theme.js"></script>
+
+<script>
+// Tooltips Initialization
+$(function () {
+  $('.material-tooltip-main').tooltip({
+    template: '<div class="tooltip md-tooltip"><div class="tooltip-arrow md-arrow"></div><div class="tooltip-inner md-inner"></div></div>'
+  });
+})
+</script>
+
+</body>
+</html>

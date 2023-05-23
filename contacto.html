@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Rentacar.com.ar</title>
+
+    <!-- Favicon -->
+   
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <!-- CSS Global -->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/plugins/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="assets/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/plugins/prettyphoto/css/prettyPhoto.css" rel="stylesheet">
+    <link href="assets/plugins/owl-carousel2/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/plugins/owl-carousel2/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/plugins/animate/animate.min.css" rel="stylesheet">
+    <link href="assets/plugins/swiper/css/swiper.min.css" rel="stylesheet">
+    <link href="assets/plugins/datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Head Libs -->
+    <script src="assets/plugins/modernizr.custom.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="assets/plugins/iesupport/html5shiv.js"></script>
+    <script src="assets/plugins/iesupport/respond.min.js"></script>
+    <![endif]-->
+	
+	<style>
+	
+	@media (max-width: 767px){
+.main-slider .item {
+    min-height: 1065px;
+}}
+
+@media (max-width: 640px){
+.main-slider .ver1 .form-search .btn-submit:after {
+    font-family: 'FontAwesome';
+    content: "\f0e0";
+    display: block;
+    text-indent: 0;
+    margin-top: -13px;
+    font-size: 26px;
+    padding-right: 105px;
+    padding-left: 105px;
+}
+	}
+	</style>
+	
+
+	
+</head>
+<body id="home" class="wide">
+<!-- PRELOADER -->
+<div id="preloader">
+    <div id="preloader-status">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+       
+    </div>
+</div>
+<!-- /PRELOADER -->
+
+<!-- WRAPPER -->
+<div class="wrapper">
+
+ 
+
+<div id="reservas" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+           
+            <div class="modal-body">
+                <div class="row">
+				
+				 <div class="col-md-12">
+                        <div class="tabs-wrapper content-tabs">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#item-description" data-toggle="tab">Mis Reservas</a></li>
+                                <li><a href="#reviews" data-toggle="tab">Iniciar Sesión</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="item-description">
+                                 
+                               
+							 
+                                <div class="form-group">
+								<label class="form-group" >Correo Electrónico</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+                                <div class="form-group">
+								<label class="form-group" >Nº de confirmación</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+                                
+                                <div class="text-center-lg">
+                                    <a class="forgot-password" href="#" data-toggle="modal" data-target="#numero">¿No sabes cual es tu Nº de confirmación?</a>
+                                </div></br>
+                                <div class="form-group">
+                                    <a class="btn btn-theme btn-block btn-theme-dark" href="#">IR A LA RESERVA</a>
+                                </div>
+                                </div>
+                                <div class="tab-pane fade" id="reviews">
+                                   
+                               
+							  
+                                <div class="form-group">
+								<label class="form-group" >Correo Electrónico</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+                                <div class="form-group">
+								<label class="form-group" >Contraseña</label>
+                                    <div class="form-group"><input class="form-control" type="password" ></div>
+                                </div>
+                                
+                                <div class=" text-center-lg">
+                                    <a class="forgot-password" href="#" data-toggle="modal" data-target="#contraseña">¿Olvidaste tu contraseña?</a>
+                                </div>
+								  <div class=" text-center-lg">
+                                    <a class="forgot-password" href="#" data-toggle="modal" data-target="#registrarse">¿Primera vez? <span style="text-decoration:underline;">REGISTRATE</span></a>
+                                </div></br>
+                                <div class="form-group">
+                                    <a class="btn btn-theme btn-block btn-theme-dark" href="#">INICIAR SESIÓN</a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ <div id="numero" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+                <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+              <div class="row">
+                    <div class="col-md-12">
+						<div class="media-body text-center-lg">
+                                   
+                                    Te eviaremos tu Nº de reserva al mail registrado en nuestro sistema.
+                                </div></br>
+						 <div class="form-group">
+								<label class="form-group" >Email</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+                                
+                               
+                                <div class="form-group">
+                                    <a class="btn btn-theme btn-block btn-theme-dark" href="#">Enviar</a>
+                                </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	
+	<div id="contraseña" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+                <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+              <div class="row">
+                    <div class="col-md-12">
+						<div class="media-body text-center-lg">
+                                   
+                                    Te eviaremos tu contraseña al mail registrado en nuestro sistema.
+                                </div></br>
+						 <div class="form-group">
+								<label class="form-group" >Email</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+                                
+                               
+                                <div class="form-group">
+                                    <a class="btn btn-theme btn-block btn-theme-dark" href="#">Enviar</a>
+                                </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	<div id="registrarse" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+			 <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+			<div class="modal-header row form-group">
+                                   
+                                    <h3>Registrate </h3>
+                                </div></br>
+               
+              <div class="row">
+                    <div class="col-md-12" style="margin-top: 0px;">
+						
+								<div class="row">
+								 <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group" >Nombre</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+								  <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group" >Apellido</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+								 <div class="col-md-12" style="margin-top: 0px;">
+						 <div class="form-group">
+								<label class="form-group" >Email</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+                                 <div class="col-md-6"style="margin-top: 0px;">
+                               <div class="form-group">
+								<label class="form-group" >Contraseña</label>
+                                    <div class="form-group"><input class="form-control" type="password" ></div>
+                                </div>
+								 </div>
+								 <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group" >Repetir Contraseña</label>
+                                    <div class="form-group"><input class="form-control" type="password" ></div>
+                                </div>
+								 </div>
+								  </div>
+								  <div class="col-md-12 text-center" style="margin-top: 0px;">
+                                <div class="form-group">
+                                    <a class="btn btn-theme btn-block btn-theme-dark" href="#" style="margin-left: auto;margin-right: auto;">Enviar</a>
+                                </div>
+								  </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  <div id="content-desktop" class="sticky-container2 ">
+    <ul class="sticky2" style="margin: 40px !important;">
+	
+	
+       <li>
+            <img src="assets/img/fb.png" width="32" height="32">
+            <p><a href="#" target="_blank">Seguinos en<br>Facebook</a></p>
+        </li>
+        <li>
+            <img src="assets/img/tw.png" width="32" height="32">
+            <p><a href="#" target="_blank">Seguinos en<br>Twitter</a></p>
+        </li>
+      <li>
+            <img src="assets/img/ig.png" width="32" height="32">
+            <p><a href="#" target="_blank">Seguinos en<br>Instagram</a></p>
+        </li>
+       
+        <li>
+            <img src="assets/img/wa.png" width="32" height="32">
+            <p><a href="#" target="_blank">Contactanos por<br>Whatsapp</a></p>
+        </li>
+    </ul>
+</div>
+
+<div id="content-mobile" class="sticky-container3 ">
+    <ul class="sticky3" style="margin: 40px !important;">
+	
+	
+       <li>
+            <img src="assets/img/fb.png" width="32" height="32">
+            <p><a href="#" target="_blank">Seguinos en<br>Facebook</a></p>
+        </li>
+        <li>
+            <img src="assets/img/tw.png" width="32" height="32">
+            <p><a href="#" target="_blank">Seguinos en<br>Twitter</a></p>
+        </li>
+      <li>
+            <img src="assets/img/ig.png" width="32" height="32">
+            <p><a href="#" target="_blank">Seguinos en<br>Instagram</a></p>
+        </li>
+       
+        <li>
+            <img src="assets/img/wa.png" width="32" height="32">
+            <p><a href="#" target="_blank">Contactanos por<br>Whatsapp</a></p>
+        </li>
+    </ul>
+</div>
+    <!-- HEADER -->
+    <header class="header fixed">
+        <div class="header-wrapper">
+            <div class="container">
+
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html"><img src="assets/img/logo-rentacar.png" alt="Logo Rentacar"/></a>
+                </div>
+                <!-- /Logo -->
+
+                <!-- Mobile menu toggle button -->
+                <a href="#" class="menu-toggle btn ripple-effect btn-theme-transparent"><i class="fa fa-bars"></i></a>
+                <!-- /Mobile menu toggle button -->
+
+                <!-- Navigation -->
+                <nav class="navigation closed clearfix">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <!-- navigation menu -->
+                            <a href="#" class="menu-toggle-close btn"><i class="fa fa-times"></i></a>
+                            <ul class="nav sf-menu">
+                               
+                                <li><a href="#" data-toggle="modal" data-target="#reservas">Mis Reservas</a></li>
+                                <li><a href="#">Favoritos</a></li>
+                                
+                                <li><a href="#">Ofertas</a></li>
+                                <li><a href="#">Contacto</a></li>
+                               
+                                <li ><a href="index.html" >$ (ARS)</a>
+                                    <ul>
+                                        <li><a href="#" >US$ (DOL)</a></li>
+										  <li><a href="#">€ (EUR)</a></li>
+                                        <li><a href="#">R$ (BRL)</a></li>
+										 <li><a href="#">$ (UYU)</a></li>
+                                     
+                                        
+                                    </ul>
+                                </li>
+								 <li class="active"><a href="index.html" ><img class="bg-esp" /></a>
+                                    <ul>
+                                        <li><a href="#" ><img class="bg-ing" /></a></li>
+                                        <li><a href="#"><img class="bg-bra" /></a></li>
+                                        <li><a href="#"><img class="bg-fra" /></a></li>
+                                        
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- /navigation menu -->
+                        </div>
+                    </div>
+                    <!-- Add Scroll Bar -->
+                    <div class="swiper-scrollbar"></div>
+                </nav>
+                <!-- /Navigation -->
+
+            </div>
+        </div>
+
+    </header>
+    <!-- /HEADER -->
+
+    <!-- CONTENT AREA -->
+    <div class="content-area">
+
+        <!-- PAGE -->
+        <section class="page-section no-padding slider">
+            <div class="container full-width">
+
+                <div class="main-slider">
+                    <div class="owl-carousel" id="main-slider">
+
+                        <!-- Slide 1 -->
+                        <div class="item slide1 ver1">
+                            <div class="caption">
+                                <div class="container">
+                                    <div class="div-table">
+                                        <div class="div-cell">
+                                            <div class="caption-content">
+                                              <h3 class="caption-subtitle" style="display:block;">Contacto</h3>
+												
+                                                <!-- Search form -->
+                                                <div   class="row">
+                                                    <div class="col-sm-12 col-md-7 " >
+
+                                                        <div class="form-search dark">
+                                                            <form action="#">
+                                                                <div class="form-title" style="padding: 16px 20px 37px;">
+																 <div  style="width: 200px; height: auto; float:left;" >
+																
+                                                                
+                                                                    <h2 >  <i class="fa fa-envelope"></i>&nbsp;   Escribinos </h2>
+																	  </div>
+																	 <div style="width: 300px; float:right;    top: -14px !important;height: 48px; position: relative;">
+																	 <h2 style="float:right;"> <!-- <img  src="assets/img/precio.png"  style="width: 70px !important;" /> --> </h2>
+																	  </div>
+                                                                </div>
+
+                                                                <div class="row row-inputs">
+                                                                    <div class="container-fluid">
+                                                                        <div class="col-sm-4">
+                                                                            <div class="form-group has-icon has-label">
+                                                                                <label for="formSearchUpLocation">Nombre</label>
+                                                                                <input type="text" class="form-control" id="formSearchUpLocation" placeholder="">
+                                                                                <span class="form-control-icon"><i class="fa fa-user"></i></span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="form-group has-icon has-label">
+                                                                                <label for="formSearchUpLocation">Email</label>
+                                                                                <input type="text" class="form-control" id="formSearchUpLocation" placeholder="">
+                                                                                <span class="form-control-icon"><i class="fa fa-envelope"></i></span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="form-group has-icon has-label">
+                                                                                <label for="formSearchUpLocation">Teléfono</label>
+                                                                                <input type="text" class="form-control" id="formSearchUpLocation" placeholder="">
+                                                                                <span class="form-control-icon"><i class="fa fa-phone"></i></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row row-inputs">
+                                                                    <div class="container-fluid">
+                                                                        <div class="col-sm-3">
+                                                                           <div class="form-group has-icon has-label">
+                                                                                <label for="formSearchOffDate">Fecha Desde</label>
+                                                                                <input type="text" class="form-control datepicker" id="formSearchOffDate" placeholder="dd/mm/yyyy">
+                                                                                <span class="form-control-icon"><i class="fa fa-calendar"></i></span>
+                                                                            </div>
+                                                                        </div>
+																		 <div class="col-sm-3">
+                                                                            <div class="form-group has-icon has-label selectpicker-wrapper">
+                                                                                <label>Hora desde</label>
+                                                                                <select
+                                                                                        class="selectpicker input-price" data-live-search="true" data-width="100%"
+                                                                                        data-toggle="tooltip" title="Select">
+                                                                                    <option>20:00 AM</option>
+                                                                                    <option>21:00 AM</option>
+                                                                                    <option>22:00 AM</option>
+                                                                                </select>
+                                                                                <span class="form-control-icon"><i class="fa fa-clock-o"></i></span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-3">
+                                                                            <div class="form-group has-icon has-label">
+                                                                                <label for="formSearchOffDate">Fecha hasta</label>
+                                                                                <input type="text" class="form-control datepicker" id="formSearchOffDate" placeholder="dd/mm/yyyy">
+                                                                                <span class="form-control-icon"><i class="fa fa-calendar"></i></span>
+                                                                            </div>
+                                                                        </div>
+																		 <div class="col-sm-3">
+                                                                            <div class="form-group has-icon has-label selectpicker-wrapper">
+                                                                                <label>Hora hasta</label>
+                                                                                <select
+                                                                                        class="selectpicker input-price" data-live-search="true" data-width="100%"
+                                                                                        data-toggle="tooltip" title="Select">
+                                                                                    <option>20:00 AM</option>
+                                                                                    <option>21:00 AM</option>
+                                                                                    <option>22:00 AM</option>
+                                                                                </select>
+                                                                                <span class="form-control-icon"><i class="fa fa-clock-o"></i></span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="form-group has-icon has-label selectpicker-wrapper">
+                                                                                <label>Categoría</label>
+                                                                                <select
+                                                                                        class="selectpicker input-price" data-live-search="true" data-width="100%"
+                                                                                        data-toggle="tooltip" title="Select">
+                                                                                    <option>Compacto</option>
+                                                                                    <option>Sedan</option>
+                                                                                    <option>Premium</option>
+                                                                                </select>
+                                                                                <span class="form-control-icon"><i class="fa fa-car"></i></span>
+                                                                            </div>
+                                                                        </div>
+																		 <div id="content-desktop" class="col-sm-8">
+																		  <div class="form-group has-icon has-label">
+                                                                                <label for="input-message">Consulta</label>
+                                                                                <textarea name="message" id="input-message" placeholder="" rows="3" cols="50"
+                                        data-toggle="tooltip" title="Message is required" class="form-control placeholder" style="height: auto !important;"></textarea>
+                                                                            </div>
+																			  </div>
+																			  <div id="content-mobile" class="col-sm-8">
+																		  <div class="form-group has-icon has-label">
+                                                                                <label for="input-message">Consulta</label>
+                                                                                <textarea name="message" id="input-message" placeholder="" rows="2" cols="50"
+                                        data-toggle="tooltip" title="Message is required" class="form-control placeholder" style="height: auto !important;"></textarea>
+                                                                            </div>
+																			  </div>
+                                                                    </div>
+                                                                </div>
+																 <!-- <div class="row row-inputs"> -->
+																  <!-- <div class="container-fluid"> -->
+																 <!-- <div class="col-sm-12"> -->
+																		  <!-- <div class="form-group has-icon has-label"> -->
+                                                                                <!-- <label for="input-message">Consulta</label> -->
+                                                                                <!-- <textarea name="message" id="input-message" placeholder="" rows="3" cols="50" -->
+                                        <!-- data-toggle="tooltip" title="Message is required" class="form-control placeholder" style="height: auto !important;"></textarea> -->
+                                                                            <!-- </div> -->
+																			  <!-- </div> -->
+																			  
+																			 <!-- </div> -->
+																			  <!-- </div> -->
+                                                                <div class="row row-submit">
+                                                                    <div class="container-fluid">
+                                                                        <div class="inner text-center">
+																		   
+                                                                            <button type="submit" class="btn btn-submit btn-theme ">Enviar Consulta</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+
+                                                    </div>
+												
+													 
+                                                </div>
+												
+												<!-- <div id="content-mobile" class="row"> -->
+                                                    <!-- <div class="col-sm-12 col-md-10 col-md-offset-1" style="margin-top:5px;"> -->
+													 <!-- <h3 style="color:#ffffff;margin-top:0px; text-transform:uppercase;">Alquiler de Autos en Argentina</h3> -->
+
+                                                        <!-- <div class="form-search dark"> -->
+                                                            <!-- <form action="#"> -->
+                                                                <!-- <div class="form-title" style="padding: 16px 20px 37px;"> -->
+																 <!-- <div  style="width: 100px; height: auto; float:left;" > -->
+																
+                                                                
+                                                                    <!-- <h2 >  <i class="fa fa-search"></i>&nbsp;   Buscar </h2> -->
+																	  <!-- </div> -->
+																	 <!-- <div style="width: 80px; float:right;    top: -14px !important;height: 48px; position: relative;"> -->
+																	 <!-- <h2 style="float:right;"> <img  src="assets/img/precio.png"  style="width: 70px !important;" /> </h2> -->
+																	  <!-- </div> -->
+                                                                <!-- </div> -->
+
+                                                                <!-- <div class="row row-inputs"> -->
+                                                                    <!-- <div class="container-fluid"> -->
+                                                                        <!-- <div class="col-sm-12"> -->
+                                                                            <!-- <div class="form-group has-icon has-label"> -->
+                                                                                <!-- <label for="formSearchUpLocation">Ciudad de retiro</label> -->
+                                                                                <!-- <input type="text" class="form-control" id="formSearchUpLocation" placeholder=""> -->
+                                                                                <!-- <span class="form-control-icon"><i class="fa fa-map-marker"></i></span> -->
+                                                                            <!-- </div> -->
+																			 
+																			
+                                                                        <!-- </div> -->
+																		<!-- <div class="col-xs-6"> -->
+																		<!-- <div class="form-group has-icon has-label"> -->
+																			<!-- <label>Misma Ubicación</label> -->
+																			
+																			<!-- </label> -->
+																			<!-- </div> -->
+																			<!-- </div> -->
+																			<!-- <div class="col-xs-6"> -->
+																			<!-- <div class="form-group has-icon has-label"> -->
+																			<!-- <label class="switch" > -->
+																			  <!-- <input  type="checkbox" checked > -->
+																			 <!-- <span class="slider round" ></span>  -->
+																			<!-- </label> -->
+																			
+																			<!-- </div> -->
+																			<!-- </div> -->
+																			
+                                                                           
+                                                                       
+																		
+																		
+                                                                        <!-- <div class="col-xs-12" style="display:none;" > -->
+																		 <!-- <div class="form-group has-icon has-label"> -->
+                                                                                <!-- <label for="formSearchOffLocation">Ciudad de devolución </label> -->
+                                                                                <!-- <input type="text" class="form-control" id="formSearchOffLocation" placeholder=""> -->
+                                                                                <!-- <span class="form-control-icon"><i class="fa fa-map-marker"></i></span> -->
+                                                                            <!-- </div> -->
+                                                                           
+                                                                        <!-- </div> -->
+                                                                     <!-- </div> -->
+                                                                <!-- </div> -->
+																		  <!-- <div class="row row-inputs"> -->
+                                                                    <!-- <div class="container-fluid">  -->
+																		<!-- <div class="col-xs-6"> -->
+                                                                            <!-- <div class="form-group has-icon has-label"> -->
+                                                                                <!-- <label for="formSearchUpDate">Fecha desde</label> -->
+                                                                                <!-- <input type="text" class="form-control datepicker" id="formSearchUpDate" placeholder="dd/mm/yyyy"> -->
+                                                                                <!-- <span class="form-control-icon"><i class="fa fa-calendar"></i></span> -->
+                                                                            <!-- </div> -->
+                                                                        <!-- </div> -->
+                                                                        <!-- <div class="col-xs-6"> -->
+                                                                            <!-- <div class="form-group has-icon has-label selectpicker-wrapper"> -->
+                                                                                <!-- <label>Hora desde</label> -->
+                                                                                <!-- <select -->
+                                                                                        <!-- class="selectpicker input-price" data-live-search="true" data-width="100%" -->
+                                                                                        <!-- data-toggle="tooltip" title="Select"> -->
+                                                                                    <!-- <option>20:00 AM</option> -->
+                                                                                    <!-- <option>21:00 AM</option> -->
+                                                                                    <!-- <option>22:00 AM</option> -->
+                                                                                <!-- </select> -->
+                                                                                <!-- <span class="form-control-icon"><i class="fa fa-clock-o"></i></span> -->
+                                                                            <!-- </div> -->
+                                                                        <!-- </div> -->
+																		  <!-- <div class="col-xs-6"> -->
+                                                                            <!-- <div class="form-group has-icon has-label"> -->
+                                                                                <!-- <label for="formSearchUpDate">Fecha desde</label> -->
+                                                                                <!-- <input type="text" class="form-control datepicker" id="formSearchUpDate" placeholder="dd/mm/yyyy"> -->
+                                                                                <!-- <span class="form-control-icon"><i class="fa fa-calendar"></i></span> -->
+                                                                            <!-- </div> -->
+                                                                        <!-- </div> -->
+                                                                        <!-- <div class="col-xs-6"> -->
+                                                                            <!-- <div class="form-group has-icon has-label selectpicker-wrapper"> -->
+                                                                                <!-- <label>Hora desde</label> -->
+                                                                                <!-- <select -->
+                                                                                        <!-- class="selectpicker input-price" data-live-search="true" data-width="100%" -->
+                                                                                        <!-- data-toggle="tooltip" title="Select"> -->
+                                                                                    <!-- <option>20:00 AM</option> -->
+                                                                                    <!-- <option>21:00 AM</option> -->
+                                                                                    <!-- <option>22:00 AM</option> -->
+                                                                                <!-- </select> -->
+                                                                                <!-- <span class="form-control-icon"><i class="fa fa-clock-o"></i></span> -->
+                                                                            <!-- </div> -->
+                                                                        <!-- </div> -->
+                                                                   
+																	
+																	<!-- </div> -->
+                                                                <!-- </div> -->
+
+                                                               
+																 <!-- <div class="row row-inputs" style="padding-bottom: 0px;"> -->
+																  <!-- <div class="container-fluid"> -->
+																 <!-- <div class="col-xs-6"> -->
+																		  <!-- <div class="form-group has-icon has-label"> -->
+                                                                              
+                                                                                  <!-- <input  type="checkbox" ><span style="color:#fddc00;">Tengo entre 25-70 años de edad</span> -->
+                                                                               
+                                                                            <!-- </div> -->
+																			  <!-- </div> -->
+																			   <!-- <div class="col-xs-6"> -->
+																		  <!-- <div class="form-group has-icon has-label"> -->
+                                                                                <!-- <label for="formSearchOffLocation">Código de Tarifa</label> -->
+                                                                                <!-- <input type="text" class="form-control" id="formSearchOffLocation" placeholder="CRN2365"> -->
+                                                                               
+                                                                            <!-- </div> -->
+																			  <!-- </div> -->
+																			 <!-- </div> -->
+																			  <!-- </div> -->
+                                                                <!-- <div class="row row-submit"> -->
+                                                                    <!-- <div class="container-fluid"> -->
+                                                                        <!-- <div class="inner" style="padding-top: 5px;"> -->
+																		   
+                                                                            <!-- <button type="submit" id="formSearchSubmit" class="btn btn-submit btn-theme pull-right">Buscar Auto</button> -->
+                                                                        <!-- </div> -->
+                                                                    <!-- </div> -->
+                                                                <!-- </div> -->
+                                                            <!-- </form> -->
+                                                        <!-- </div> -->
+
+                                                    <!-- </div> -->
+													 <!-- <div class="col-sm-12 col-md-6 " > -->
+													  <!-- <a href="#"> <img src="assets/img/hot-deal.png" alt=""/></a> -->
+													 <!-- </div> -->
+                                                <!-- </div> -->
+                                                <!-- /Search form -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Slide 1 -->
+
+                       
+
+                        <!-- Slide 4 -->
+                        <div class="item slide4 ver4">
+                            <div class="caption">
+                                <div class="container">
+                                    <div class="div-table">
+                                        <div class="div-cell">
+                                            <div class="caption-content">
+                                                <h2 class="caption-title"></h2>
+                                                <h3 class="caption-subtitle"><span></span></h3>
+                                                <p class="caption-text">
+                                                   <br/>
+                                                  
+                                                </p>
+                                                <p class="caption-text">
+                                                    <a class="btn btn-theme ripple-effect btn-theme-md" href="#ofertas"></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Slide 4 -->
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- /PAGE -->
+
+        
+
+        <!-- PAGE -->
+      
+
+    </div>
+    <!-- /CONTENT AREA -->
+
+   <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <div class="widget">
+                            <h4 class="widget-title">EMPRESA</h4>
+							
+                             
+							  <a href="#" ><img class="img-responsive" src="assets/img/data-fiscal.png" alt="Data Fical" style="margin-bottom: 10px;"/></a>
+                         
+                          <img class="img-responsive" src="assets/img/logo_marca_pais.png" alt="Argentina" style="margin-bottom: 10px;"/>
+						  
+						   <a href="index.html"><img class="img-responsive" src="assets/img/logo-rentacar-footer.png" alt="Logo Rentacar"/></a>
+                           
+                        </p>
+                        </div>
+                    </div>
+                     <div class="col-md-3">
+                        <div class="widget widget-categories2">
+                            <h4 class="widget-title">Información</h4>
+                            <ul>
+                                <li><a href="#">Sucursales</a></li>
+                                <li><a href="#">Contacto</a></li>
+                                <li><a href="#">Términos y Condiciones</a></li>
+                                <li><a href="#">Mapa de Sitio</a></li>
+                                <li><a href="#">Franquicia</a></li>
+								  <li><a href="#">Info. Covid 19</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="widget widget-tag-cloud">
+                            <h4 class="widget-title">Formas de Pago</h4>
+                            <ul>
+							 <li><img class="img-responsive" src="assets/img/ssl-2-1.png" alt="Sitio Seguro"/></li>
+                               
+							
+                               
+                            </ul>
+                        </div>
+						<div class="widget widget-tag-cloud">
+                          
+                            <ul>
+							 
+                                <li><img class="img-responsive" src="assets/img/mercado-pago-logo.png" alt="Mercado Pago"/></li>
+                                <li> <img src="assets/img/preview/payments/mastercard-2.jpg" alt="Mastercard"/></li>
+                                <li><img src="assets/img/preview/payments/visa-2.jpg" alt="Visa"/></li>
+                                <li> <img src="assets/img/preview/payments/american-express-2.jpg" alt="American Express"/></li>
+                                <li><img src="assets/img/preview/payments/paypal-2.jpg" alt="Paypal"/></li>
+							
+                               
+                            </ul>
+                        </div>
+                    </div>
+					<div class="col-md-3">
+                        <div class="widget">
+                            <h4 class="widget-title">CONTACTO</h4>
+                          
+                           
+                            <ul>
+							  <li>
+                                   <a href="tel:08107778080" style="padding-top: 5px; "><i class="fa fa-phone"></i> 0810 777 8080</a></li>
+								   <li><i class="fa fa-calendar"></i> Lun a Vie de 9hs a 19hs </li>
+								     <li><i class="fa fa-calendar"></i> Sab de 10hs a 18hs </li></br>
+                             	 <li><img src="assets/img/mps.png" alt="Powered By MPS"/></li>
+                            </ul>
+                        <!-- </div> -->
+                    <!-- </div> -->
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-meta">
+            <div class="container">
+                <div class="row" >
+
+                    <div class="col-sm-12" >
+                       
+                        <div class="copyright">&copy; 2015 Todos los derechos reservados. Los logotipos y lemas que identifican a cualquier producto y servicio de Rentacar.com.ar son marcas de su propiedad.</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /FOOTER -->
+
+    <div id="to-top" class="to-top"><i class="fa fa-angle-up"></i></div>
+
+</div>
+<!-- /WRAPPER -->
+
+<!-- JS Global -->
+<script src="assets/plugins/jquery/jquery-1.11.1.min.js"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script src="assets/plugins/superfish/js/superfish.min.js"></script>
+<script src="assets/plugins/prettyphoto/js/jquery.prettyPhoto.js"></script>
+<script src="assets/plugins/owl-carousel2/owl.carousel.min.js"></script>
+<script src="assets/plugins/jquery.sticky.min.js"></script>
+<script src="assets/plugins/jquery.easing.min.js"></script>
+<script src="assets/plugins/jquery.smoothscroll.min.js"></script>
+<script src="assets/plugins/smooth-scrollbar.min.js"></script>
+<script src="assets/plugins/wow/wow.min.js"></script>
+<script>
+    // WOW - animated content
+    //new WOW().init();
+</script>
+<script src="assets/plugins/swiper/js/swiper.jquery.min.js"></script>
+<script src="assets/plugins/datetimepicker/js/moment-with-locales.min.js"></script>
+<script src="assets/plugins/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+<!-- JS Page Level -->
+<script src="assets/js/theme-ajax-mail.js"></script>
+<script src="assets/js/theme.js"></script>
+
+
+
+<script>
+						$(document).ready(function(){
+					$(".change").on({
+
+						click: function(){
+							$(this).css("background-color", "rgba(225, 225, 225, 0.81)");
+              $(this).css("font-size", "16px");
+              $(this).css("color", "#7f7a7a");
+              $(this).css("font-family", "arial");
+						}  
+					});
+				});
+				
+				
+				$(document).ready(function(){
+        $("#popup").modal('show');
+    });
+				
+				
+				
+				
+				
+				</script>
+				
+				
+				
+
+</body>
+</html>

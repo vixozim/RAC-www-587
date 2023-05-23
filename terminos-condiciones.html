@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Rentacar.com.ar</title>
+
+    <!-- Favicon -->
+   
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <!-- CSS Global -->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/plugins/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="assets/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/plugins/prettyphoto/css/prettyPhoto.css" rel="stylesheet">
+    <link href="assets/plugins/owl-carousel2/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/plugins/owl-carousel2/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/plugins/animate/animate.min.css" rel="stylesheet">
+    <link href="assets/plugins/swiper/css/swiper.min.css" rel="stylesheet">
+    <link href="assets/plugins/datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Head Libs -->
+    <script src="assets/plugins/modernizr.custom.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="assets/plugins/iesupport/html5shiv.js"></script>
+    <script src="assets/plugins/iesupport/respond.min.js"></script>
+    <![endif]-->
+	
+	
+	
+
+	
+</head>
+<body id="home" class="wide">
+<!-- PRELOADER -->
+<div id="preloader">
+    <div id="preloader-status">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+       
+    </div>
+</div>
+<!-- /PRELOADER -->
+
+<!-- WRAPPER -->
+<div class="wrapper">
+
+ 
+
+<div id="reservas" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+           
+            <div class="modal-body">
+                <div class="row">
+				
+				 <div class="col-md-12">
+                        <div class="tabs-wrapper content-tabs">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#item-description" data-toggle="tab">Mis Reservas</a></li>
+                                <li><a href="#reviews" data-toggle="tab">Iniciar Sesión</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="item-description">
+                                 
+                               
+							 
+                                <div class="form-group">
+								<label class="form-group" >Correo Electrónico</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+                                <div class="form-group">
+								<label class="form-group" >Nº de confirmación</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+                                
+                                <div class="text-center-lg">
+                                    <a class="forgot-password" href="#" data-toggle="modal" data-target="#numero">¿No sabes cual es tu Nº de confirmación?</a>
+                                </div></br>
+                                <div class="form-group">
+                                    <a class="btn btn-theme btn-block btn-theme-dark" href="#">IR A LA RESERVA</a>
+                                </div>
+                                </div>
+                                <div class="tab-pane fade" id="reviews">
+                                   
+                               
+							  
+                                <div class="form-group">
+								<label class="form-group" >Correo Electrónico</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+                                <div class="form-group">
+								<label class="form-group" >Contraseña</label>
+                                    <div class="form-group"><input class="form-control" type="password" ></div>
+                                </div>
+                                
+                                <div class=" text-center-lg">
+                                    <a class="forgot-password" href="#" data-toggle="modal" data-target="#contraseña">¿Olvidaste tu contraseña?</a>
+                                </div>
+								  <div class=" text-center-lg">
+                                    <a class="forgot-password" href="#" data-toggle="modal" data-target="#registrarse">¿Primera vez? <span style="text-decoration:underline;">REGISTRATE</span></a>
+                                </div></br>
+                                <div class="form-group">
+                                    <a class="btn btn-theme btn-block btn-theme-dark" href="#">INICIAR SESIÓN</a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ <div id="numero" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+                <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+              <div class="row">
+                    <div class="col-md-12">
+						<div class="media-body text-center-lg">
+                                   
+                                    Te eviaremos tu Nº de reserva al mail registrado en nuestro sistema.
+                                </div></br>
+						 <div class="form-group">
+								<label class="form-group" >Email</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+                                
+                               
+                                <div class="form-group">
+                                    <a class="btn btn-theme btn-block btn-theme-dark" href="#">Enviar</a>
+                                </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	
+	<div id="contraseña" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+                <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+              <div class="row">
+                    <div class="col-md-12">
+						<div class="media-body text-center-lg">
+                                   
+                                    Te eviaremos tu contraseña al mail registrado en nuestro sistema.
+                                </div></br>
+						 <div class="form-group">
+								<label class="form-group" >Email</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+                                
+                               
+                                <div class="form-group">
+                                    <a class="btn btn-theme btn-block btn-theme-dark" href="#">Enviar</a>
+                                </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	<div id="registrarse" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+			 <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+			<div class="modal-header row form-group">
+                                   
+                                    <h3>Registrate </h3>
+                                </div></br>
+               
+              <div class="row">
+                    <div class="col-md-12" style="margin-top: 0px;">
+						
+								<div class="row">
+								 <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group" >Nombre</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+								  <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group" >Apellido</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+								 <div class="col-md-12" style="margin-top: 0px;">
+						 <div class="form-group">
+								<label class="form-group" >Email</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+                                 <div class="col-md-6"style="margin-top: 0px;">
+                               <div class="form-group">
+								<label class="form-group" >Contraseña</label>
+                                    <div class="form-group"><input class="form-control" type="password" ></div>
+                                </div>
+								 </div>
+								 <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group" >Repetir Contraseña</label>
+                                    <div class="form-group"><input class="form-control" type="password" ></div>
+                                </div>
+								 </div>
+								  </div>
+								  <div class="col-md-12 text-center" style="margin-top: 0px;">
+                                <div class="form-group">
+                                    <a class="btn btn-theme btn-block btn-theme-dark" href="#" style="margin-left: auto;margin-right: auto;">Enviar</a>
+                                </div>
+								  </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  <div id="content-desktop" class="sticky-container2 ">
+    <ul class="sticky2" style="margin: 40px !important;">
+	
+	
+       <li>
+            <img src="assets/img/fb.png" width="32" height="32">
+            <p><a href="#" target="_blank">Seguinos en<br>Facebook</a></p>
+        </li>
+        <li>
+            <img src="assets/img/tw.png" width="32" height="32">
+            <p><a href="#" target="_blank">Seguinos en<br>Twitter</a></p>
+        </li>
+      <li>
+            <img src="assets/img/ig.png" width="32" height="32">
+            <p><a href="#" target="_blank">Seguinos en<br>Instagram</a></p>
+        </li>
+       
+        <li>
+            <img src="assets/img/wa.png" width="32" height="32">
+            <p><a href="#" target="_blank">Contactanos por<br>Whatsapp</a></p>
+        </li>
+    </ul>
+</div>
+
+<div id="content-mobile" class="sticky-container3 ">
+    <ul class="sticky3" style="margin: 40px !important;">
+	
+	
+       <li>
+            <img src="assets/img/fb.png" width="32" height="32">
+            <p><a href="#" target="_blank">Seguinos en<br>Facebook</a></p>
+        </li>
+        <li>
+            <img src="assets/img/tw.png" width="32" height="32">
+            <p><a href="#" target="_blank">Seguinos en<br>Twitter</a></p>
+        </li>
+      <li>
+            <img src="assets/img/ig.png" width="32" height="32">
+            <p><a href="#" target="_blank">Seguinos en<br>Instagram</a></p>
+        </li>
+       
+        <li>
+            <img src="assets/img/wa.png" width="32" height="32">
+            <p><a href="#" target="_blank">Contactanos por<br>Whatsapp</a></p>
+        </li>
+    </ul>
+</div>
+    <!-- HEADER -->
+    <header class="header fixed">
+        <div class="header-wrapper">
+            <div class="container">
+
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html"><img src="assets/img/logo-rentacar.png" alt="Logo Rentacar"/></a>
+                </div>
+                <!-- /Logo -->
+
+                <!-- Mobile menu toggle button -->
+                <a href="#" class="menu-toggle btn ripple-effect btn-theme-transparent"><i class="fa fa-bars"></i></a>
+                <!-- /Mobile menu toggle button -->
+
+                <!-- Navigation -->
+                <nav class="navigation closed clearfix">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <!-- navigation menu -->
+                            <a href="#" class="menu-toggle-close btn"><i class="fa fa-times"></i></a>
+                            <ul class="nav sf-menu">
+                               
+                                <li><a href="#" data-toggle="modal" data-target="#reservas">Mis Reservas</a></li>
+                                <li><a href="#">Favoritos</a></li>
+                                
+                                <li><a href="#">Ofertas</a></li>
+                                <li><a href="#">Contacto</a></li>
+                               
+                                <li ><a href="index.html" >$ (ARS)</a>
+                                    <ul>
+                                        <li><a href="#" >US$ (DOL)</a></li>
+										  <li><a href="#">€ (EUR)</a></li>
+                                        <li><a href="#">R$ (BRL)</a></li>
+										 <li><a href="#">$ (UYU)</a></li>
+                                     
+                                        
+                                    </ul>
+                                </li>
+								 <li class="active"><a href="index.html" ><img src="assets/img/esp.png" alt="Español"/></a>
+                                    <ul>
+                                        <li><a href="#" ><img src="assets/img/ing.png" alt="Ingles"/></a></li>
+                                        <li><a href="#"><img src="assets/img/bra.png" alt="Portugues"/></a></li>
+                                        <li><a href="#"><img src="assets/img/fra.png" alt="Frances"/></a></li>
+                                        
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- /navigation menu -->
+                        </div>
+                    </div>
+                    <!-- Add Scroll Bar -->
+                    <div class="swiper-scrollbar"></div>
+                </nav>
+                <!-- /Navigation -->
+
+            </div>
+        </div>
+
+    </header>
+    <!-- /HEADER -->
+
+    <!-- CONTENT AREA -->
+    <div class="content-area">
+
+    
+<!-- BREADCRUMBS -->
+        <section class="page-section breadcrumbs text-right">
+            <div class="container">
+                <div class="page-header">
+                    <h3>Terminos & Condiciones</h3>
+                </div>
+                <ul class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                   
+                </ul>
+            </div>
+        </section>
+        <!-- /BREADCRUMBS -->
+        
+
+       
+
+       
+		
+		 <!-- PAGE -->
+        <section class="page-section " style="background: #b1b1b1 url(assets/img/terminos.png) no-repeat center top fixed;">
+            <div class="container">
+                <h2 class="section-title"><span>Introducción</span></h2>
+                <hr class="page-divider half"/>
+                <div class="row">
+							<div class="col-md-12">
+											<h3>Elegí Kms y coberturas.</h3>
+										 <div class="post-body">
+											<p style="text-align:justify;">
+											Ud. ha accedido al sistema de reservas on line de Rentacar.com.ar.</br>
+
+Su utilización implica la adhesión sin reservas a las condiciones de uso estipuladas en el presente reglamento. Se recomienda leer cuidadosamente sus términos. En caso de no estar Ud. de acuerdo con los términos y condiciones estipulados en este reglamento, se recomienda la no utilización del servicio de reservas provisto por su intermedio. Rentacar.com.ar se reserva el derecho de modificar o alterar los términos y condiciones del presente reglamento sin previo aviso. Debido a ello, se recomienda dar una lectura al mismo en cada oportunidad que el usuario decida utilizar el servicio de reservas provisto a través de Rentacar.com.ar.
+
+
+											</p>
+											 </div>
+											  </div>
+				
+				
+				
+                    <div class="col-md-12">
+                        <div class="panel-group accordion" id="faq-accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="faq-heading1">
+                                    <h4 class="panel-title">
+                                     <a class="collapsed" data-toggle="collapse" data-parent="#faq-accordion" href="#faq-collapse1" aria-expanded="false" aria-controls="collapse2">
+                                            <span class="dot"></span> 1. Alcances del servicio ofrecido y responsabilidad de Rentacar.com.ar.
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="faq-collapse1" class="panel-collapse collapse " role="tabpanel" aria-labelledby="faq-heading1">
+                                    <div class="panel-body">
+                                       1.1. Rentacar.com.ar opera un sistema de reservas, que permite a los demandantes de vehículos automotores de alquiler para uso particular, acceder al stock o inventario de oferta de las agencias especializadas que han contratado los servicios de Rentacar.com.ar, como comisionista, reservando de esa manera los servicios que requerirán en un futuro.</br></br>
+
+1.2. Rentacar.com.ar no posee participación directa o indirecta en la actividad de las agencias de alquiler de vehículos (a las que en adelante se aludirá como "rentadoras").</br>
+</br>
+1.3. Rentacar.com.ar se responsabiliza exclusivamente por la administración del sitio web y por la efectiva notificación de la reserva y de su aceptación por la rentadora seleccionada.</br></br>
+
+1.4. Rentacar.com.ar no garantiza en ningún caso las prestaciones comprometidas por las rentadoras que ofrecen vehículos por intermedio de Rentacar.com.ar. En caso de que una rentadora incumpliera las prestaciones comprometidas, deberá dirigirse hacia ella el reclamo correspondiente.
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="faq-heading2">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#faq-accordion" href="#faq-collapse2" aria-expanded="false" aria-controls="collapse2">
+                                            <span class="dot"></span> 2. Condiciones esenciales para la utilización del sitio.
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="faq-collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-heading2">
+                                    <div class="panel-body">
+                                     2.1. Ser mayor de edad y plenamente capaz de obrar, según la legislación vigente en el país o territorio políticamente autónomo en el que resida. Se presumirá que el usuario posee capacidad jurídica en tanto sea portador titular o adherente de una tarjeta de crédito válida.</br></br>
+
+2.2. Aceptar en su totalidad las condiciones de uso estipuladas en el presente reglamento.</br></br>
+
+2.3. Proveer información veraz, suficiente y adecuada para permitir la correcta identificación del usuario y del beneficiario o beneficiarios de los servicios contratados a través de Rentacar.com.ar</br>
+</br>
+2.4. En caso de abrir una cuenta como cliente de Rentacar.com.ar, el usuario protegerá la información de dicha cuenta, supervisará y será totalmente responsable del uso de su cuenta por parte de otra persona. A su entera discreción Rentacar.com.ar podrá denegar el acceso a este sitio web y a los servicios que ofrece a cualquier persona, en cualquier momento y por cualquier motivo, lo que incluye, en forma enunciativa y no limitativa, la violación de las condiciones de uso aquí estipuladas.
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="faq-heading3">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#faq-accordion" href="#faq-collapse3" aria-expanded="false" aria-controls="collapse3">
+                                            <span class="dot"></span> 3. Propiedad intelectual, industrial y marcaria.
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="faq-collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-heading3">
+                                    <div class="panel-body">
+                                      Rentacar.com.ar es una designación de internet protegida por las normas de la ICANN (normas "NIC"), así como una marca registrada, protegida por leyes de los países en los que opera y de la Organización Mundial de Comercio (Normas "TRIPS" - Trade related aspects of intellectual property rights). Así también el software utilizado para la operación de este sistema de reservas, se encuentra amparado por las normas de protección de la propiedad intelectual dictadas a nivel nacional e internacional. El contenido íntegro de Rentacar.com.ar, es propiedad de Tigre Rentacar S.R.L. El usuario acepta que de ninguna manera podrá modificar, copiar, distribuir, transmitir, mostrar, realizar, reproducir, publicar, otorgar licencia, crear trabajos derivados, transferir, vender o revender cualquier información, software, contenido, información, producto o servicio obtenido de o por medio de Rentacar.com.ar.
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                       
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="faq-heading4">
+                                    <h4 class="panel-title">
+                                       <a class="collapsed" data-toggle="collapse" data-parent="#faq-accordion" href="#faq-collapse4" aria-expanded="false" aria-controls="collapse2">
+                                            <span class="dot"></span> 4. Prohibiciones específicas.
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="faq-collapse4" class="panel-collapse collapse " role="tabpanel" aria-labelledby="faq-heading4">
+                                    <div class="panel-body">
+                                     Queda prohibido al usuario:</br>
+
+4.1. Usar este Sitio web o su contenido con ningún propósito comercial.</br></br>
+
+4.2. Realizar reservaciones hipotéticas, falsas o fraudulentas o reservaciones previendo la demanda.</br></br>
+
+4.3. Acceder, controlar o copiar el contenido o la información de este Sitio web usando un robot, spider, scraper u otro medio automatizado o cualquier proceso manual para ningún propósito, sin contar con expresa autorización de Rentacar.com.ar</br></br>
+
+4.4. Violar las restricciones de cualquier encabezado de exclusión de robots de este Sitio web, evitar o evadir otras medidas utilizadas para impedir o limitar el accesoça este Sitio web.</br>
+</br>
+4.5. Tomar acciones que impongan, o puedan imponer, según criterio de Rentacar.com.ar, una carga irracional o desproporcionadamente grande de la oferta dispuesta por las rentadoras.</br></br>
+
+4.6. Crear enlaces profundos a cualquier parte de Rentacar.com.ar (lo que incluye, en forma enunciativa y no limitativa, la ruta de compra de cualquier servicio de viajes) para ningún propósito sin previo y formal permiso de Rentacar.com.ar.</br></br>
+
+4.7. "Enmarcar", "reflejar" o de otra manera incorporar cualquier parte de Rentacar.com.ar dentro de cualquier otro sitio web sin previa autorización por escrito. La violación de tales prohibiciones habilitará la persecución legal de los infractores, y dependiendo de la jurisdicción en que tengan efecto tales actos, implicará la formulación de cargos criminales contra sus autores.
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="faq-heading5">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#faq-accordion" href="#faq-collapse5" aria-expanded="false" aria-controls="collapse2">
+                                            <span class="dot"></span> 5. Protección de datos personales.
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="faq-collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-heading5">
+                                    <div class="panel-body">
+                                       Toda la información que el usuario suministre a Rentacar.com.ar será debidamente resguardada y utilizada al solo y único fin de dar curso a la reserva on line solicitada por el usuario. Fuera de la específica finalidad para la que le son suministrados los datos, Rentacar.com.ar se compromete a no divulgarlos, difundirlos, tratarlos o transferirlos por cualquier medio a cualquier persona, salvo que concurra alguno de los siguientes casos: (i) orden de entrega por autoridad pública competente; (ii) requerimiento judicial o policial. Rentacar.com.ar se reserva la facultad de remitir al usuario mensajes promocionales o información, salvo que específicamente el usuario solicite la supresión de tales envíos.
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="faq-heading6">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#faq-accordion" href="#faq-collapse6" aria-expanded="false" aria-controls="collapse3">
+                                            <span class="dot"></span> 6. Críticas, comentarios y otras comunicaciones - quiénes somos.
+
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="faq-collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-heading6">
+                                    <div class="panel-body">
+                                        Los usuarios podrán remitir comentarios o críticas a Rentacar.com.ar se reserva el derecho de publicar tales comentario, críticas u observaciones para información de los restantes usuarios actuales o potenciales del sitio web. La publicación de tales comentarios se hará reservando la identidad de los usuarios que los remitieron. El usuario será responsable del contenido de sus comentarios, reservándose Rentacar.com.ar la potestad de no publicar todo o parte de tales comentarios si los considerase inadecuados, ilegales, ofensivos o pasibles de causar perjuicios a terceros. Toda comunicación postal tradicional (en oposición a la electrónica provista por nuestra casilla de webmail : info@Rentacar.com.ar), deberá ser dirigida a: Tigre Rentacar S.R.L., Libertador 5595 P16 , Buenos Aires, República Argentina (CP. 1428).
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+							 <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="faq-heading7">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#faq-accordion" href="#faq-collapse7" aria-expanded="false" aria-controls="collapse3">
+                                            <span class="dot"></span> 7. Aranceles, reembolsos.
+
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="faq-collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-heading7">
+                                    <div class="panel-body">
+                                        Rentacar.com.ar provee un servicio de reservas arancelado. Una vez confirmada la reserva, el pago de la comisión se devengará automáticamente, debitándoselo de la tarjeta de crédito suministrada por el usuario. La comisión será reembolsable solo en el caso de que por fallas del software o de la operación del sitio, la reserva no hubiese sido correctamente efectuada, erigiéndose en causa eficiente de la frustración del servicio contratado por el usuario. En caso que, por cualquier motivo, el usuario cancelara la reserva hecha con más 72 hrs hábiles de anticipación a la fecha de entrega estipulada en la reserva, el usuario podrá solicitar el reembolso del pago realizado. En caso contrario el usuario no podrá solicitar el reembolso del pago realizado.
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+							 <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="faq-heading8">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#faq-accordion" href="#faq-collapse8" aria-expanded="false" aria-controls="collapse3">
+                                            <span class="dot"></span> 8. Acerca de las rentadoras.
+
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="faq-collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-heading8">
+                                    <div class="panel-body">
+                                        Las rentadoras ofrecen en cada caso particular al cliente distintas condiciones de contratación, acordes a los usos y prácticas vigentes en cada plaza o territorio en el que operan. Rentacar.com.ar no garantiza homogeneidad de condiciones de contratación, ni condiciones determinadas, limitándose a la confirmación de la reserva. Las condiciones de alquiler son de cuenta de cada rentadora y en cada caso deberá el usuario examinar tales términos para decidir si contrata o no el servicio requerido.
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+							 <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="faq-heading9">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#faq-accordion" href="#faq-collapse9" aria-expanded="false" aria-controls="collapse3">
+                                            <span class="dot"></span> 9. Generalidades.
+
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="faq-collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq-heading9">
+                                    <div class="panel-body">
+                                       9.1. Es posible que la información publicada en este sitio y suministrada por las rentadoras incluya imprecisiones o errores. Rentacar.com.ar no asume ninguna responsabilidad ni obligación por cualquier error, imprecisión, defecto u omisión que contenga la información comercial proporcionada por las rentadoras.</br></br>
+
+9.2. Las calificaciones, comentarios, referencias y menciones de los usuarios solo servirán como pautas orientadoras para los usuarios. Rentacar.com.ar no asume ninguna garantía respecto de la calidad de los servicios contratados, ni tampoco avala o asegura la veracidad de los comentarios y/o recomendaciones vertidos por los usuarios.</br></br>
+
+9.3. Es posible que en Rentacar.com.ar se encuentren hipervínculos a otros sitios web administrados por partes ajenas a Rentacar.com.ar. Tales hipervínculos sólo se proporcionan como referencia. Rentacar.com.ar no controla esos sitios web y no es responsable por sus contenidos, la privacidad u otras prácticas comerciales.</br></br>
+
+9.4. Los tipos de cambio de divisas se basan en diversas fuentes disponibles públicamente y sólo se deben usar como referencia. La exactitud de los tipos de cambio no se verifica y es posible que exista una variación con respecto a los tipos de cambio reales. Las cotizaciones de las divisas no se actualizan diariamente. En caso de transacciones internacionales, la relación de cambio es establecida por la entidad financiera o sistema de tarjeta de crédito que liquida la operación, con total independencia de Rentacar.com.ar, careciendo esta última de injerencia concreta en dicho aspecto de la transacción.</br></br>
+
+9.5. Si se determinase que alguna parte de este reglamento es inválida o es inexigible conforme a una ley vigente en alguno de los países con los que opera Rentacar.com.ar - lo que incluye, en forma enunciativa y no limitativa, las exenciones de responsabilidad de garantía o las limitaciones de responsabilidad establecidas en las cláusulas precedente-, se sustituirá dicha cláusula por una cláusula válida y exigible que se adecue mejor a la intención de la cláusula original, de manera que el reglamento continúe en vigencia.
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /PAGE -->
+		
+       
+
+    </div>
+    <!-- /CONTENT AREA -->
+
+   <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <div class="widget">
+                            <h4 class="widget-title">EMPRESA</h4>
+							
+                             
+							  <a href="#" ><img class="img-responsive" src="assets/img/data-fiscal.png" alt="Data Fical" style="margin-bottom: 10px;"/></a>
+                         
+                          <img class="img-responsive" src="assets/img/logo_marca_pais.png" alt="Argentina" style="margin-bottom: 10px;"/>
+						  
+						   <a href="index.html"><img class="img-responsive" src="assets/img/logo-rentacar-footer.png" alt="Logo Rentacar"/></a>
+                           
+                        </p>
+                        </div>
+                    </div>
+                     <div class="col-md-3">
+                        <div class="widget widget-categories2">
+                            <h4 class="widget-title">Información</h4>
+                            <ul>
+                                <li><a href="#">Sucursales</a></li>
+                                <li><a href="#">Contacto</a></li>
+                                <li><a href="#">Términos y Condiciones</a></li>
+                                <li><a href="#">Mapa de Sitio</a></li>
+                                <li><a href="#">Franquicia</a></li>
+								  <li><a href="#">Info. Covid 19</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="widget widget-tag-cloud">
+                            <h4 class="widget-title">Formas de Pago</h4>
+                            <ul>
+							 <li><img class="img-responsive" src="assets/img/ssl-2-1.png" alt="Sitio Seguro"/></li>
+                               
+							
+                               
+                            </ul>
+                        </div>
+						<div class="widget widget-tag-cloud">
+                          
+                            <ul>
+							 
+                                <li><img class="img-responsive" src="assets/img/mercado-pago-logo.png" alt="Mercado Pago"/></li>
+                                <li> <img src="assets/img/preview/payments/mastercard-2.jpg" alt="Mastercard"/></li>
+                                <li><img src="assets/img/preview/payments/visa-2.jpg" alt="Visa"/></li>
+                                <li> <img src="assets/img/preview/payments/american-express-2.jpg" alt="American Express"/></li>
+                                <li><img src="assets/img/preview/payments/paypal-2.jpg" alt="Paypal"/></li>
+							
+                               
+                            </ul>
+                        </div>
+                    </div>
+					<div class="col-md-3">
+                        <div class="widget">
+                            <h4 class="widget-title">CONTACTO</h4>
+                          
+                           
+                            <ul>
+							  <li>
+                                   <a href="tel:08107778080" style="padding-top: 5px; "><i class="fa fa-phone"></i> 0810 777 8080</a></li>
+								   <li><i class="fa fa-calendar"></i> Lun a Vie de 9hs a 19hs </li>
+								     <li><i class="fa fa-calendar"></i> Sab de 10hs a 18hs </li></br>
+                             	 <li><img src="assets/img/mps.png" alt="Powered By MPS"/></li>
+                            </ul>
+                        <!-- </div> -->
+                    <!-- </div> -->
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-meta">
+            <div class="container">
+                <div class="row" >
+
+                    <div class="col-sm-12" >
+                       
+                        <div class="copyright">&copy; 2015 Todos los derechos reservados. Los logotipos y lemas que identifican a cualquier producto y servicio de Rentacar.com.ar son marcas de su propiedad.</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /FOOTER -->
+
+    <div id="to-top" class="to-top"><i class="fa fa-angle-up"></i></div>
+
+</div>
+<!-- /WRAPPER -->
+
+<!-- JS Global -->
+<script src="assets/plugins/jquery/jquery-1.11.1.min.js"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script src="assets/plugins/superfish/js/superfish.min.js"></script>
+<script src="assets/plugins/prettyphoto/js/jquery.prettyPhoto.js"></script>
+<script src="assets/plugins/owl-carousel2/owl.carousel.min.js"></script>
+<script src="assets/plugins/jquery.sticky.min.js"></script>
+<script src="assets/plugins/jquery.easing.min.js"></script>
+<script src="assets/plugins/jquery.smoothscroll.min.js"></script>
+<script src="assets/plugins/smooth-scrollbar.min.js"></script>
+<script src="assets/plugins/wow/wow.min.js"></script>
+<script>
+    // WOW - animated content
+    //new WOW().init();
+</script>
+<script src="assets/plugins/swiper/js/swiper.jquery.min.js"></script>
+<script src="assets/plugins/datetimepicker/js/moment-with-locales.min.js"></script>
+<script src="assets/plugins/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+<!-- JS Page Level -->
+<script src="assets/js/theme-ajax-mail.js"></script>
+<script src="assets/js/theme.js"></script>
+
+
+
+<script>
+						$(document).ready(function(){
+					$(".change").on({
+
+						click: function(){
+							$(this).css("background-color", "rgba(225, 225, 225, 0.81)");
+              $(this).css("font-size", "16px");
+              $(this).css("color", "#7f7a7a");
+              $(this).css("font-family", "arial");
+						}  
+					});
+				});
+				
+				
+				$(document).ready(function(){
+        $("#popup").modal('show');
+    });
+				
+				
+				
+				
+				
+				</script>
+				
+				
+				
+
+</body>
+</html>
